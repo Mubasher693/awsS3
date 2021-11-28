@@ -43,6 +43,7 @@ def upload_file():
                 s3_object.run()
                 s3_object.upload_file(file_path)
                 flash('Uploaded successfully.')
+
                 # return redirect(url_for('download_file', name=filename))
     except Exception as e:
         logging.error(e)
