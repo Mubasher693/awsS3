@@ -1,0 +1,33 @@
+
+@media(max-width:1199px) {
+    
+}
+
+@media(max-width:991px) {
+   
+}
+
+@media(max-width:767px) {
+    .outer_most{width: 100%;}
+}
+
+@media(max-width:560px) {
+    
+}
+
+@media(max-width:414px) {
+  
+}
+
+@media(max-width:376px) {
+   header, footer {padding: 20px 15px;}
+    .wrapper {width: 100%}
+    .editdetail_in, .upload_inner{padding: 0px 15px;}
+    .sport h4 {font-size: 14px;}
+    .exactsport h4 {font-size: 15px;}
+    .date_div h1 {font-size: 25px;}
+    .camera_qua iframe { width: 172px;}
+}
+@media(max-width:374px){
+    .editdetails li {font-size: 18px;}
+}

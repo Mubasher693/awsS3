@@ -1,0 +1,45 @@
+{% extends "index.html" %}
+{% block content %}
+    <div class="outer_most">
+        <div class="main boxs">
+            {% include 'includes/header.html' %}
+            <div class="upload boxs">
+                <div class="date_div boxs">
+                    <div class="wrapper">
+                        <h1>AWS Web Services</h1>
+                    </div>
+                </div>
+                <div class="upload_inner boxs">
+                    <div class="wrapper">
+                        <div class="upload_con boxs">
+                            {% include 'includes/error/flash.html' %}
+                            {% from "includes/error/_formhelpers.html" import render_field %}
+                            <form action="/" class="form-horizontal" method=post enctype=multipart/form-data>
+                                <div class="sport boxs">
+                                    <h4>Upload File</h4>
+                                </div>
+                                <div class="exactvsother boxs">
+                                    <div class="form-group col-md-12">
+                                        <input type="text" class="form-control-plaintext" id="bucket" name="bucket" placeholder="bucket-name" required>
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <input type="file" name="file" class="form-control-file">
+                                    </div>
+                                </div>
+                                <div class="upload_btn">
+                                    <button class="ripple_btn proBtn">
+                                        <img src="{{url_for('static', filename='images/upload.png')}}" alt="upload" />
+                                        upload now
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+
+{% endblock %}
